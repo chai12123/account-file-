@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  --color-primary-navy: #0F1B2D;
+  --color-primary-navy-hover: #162842;
+  --color-primary-emerald: #1E7A5E;
+  --color-primary-emerald-hover: #17614A;
+  --color-accent-gold: #C9A86A;
+  --color-bg-ivory: #F7F5F0;
+}
+
+body {
+  background-color: var(--color-bg-ivory);
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
