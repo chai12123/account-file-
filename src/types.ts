@@ -47,7 +47,7 @@ export interface RequestData {
 
 export interface AppState {
   view: "admin" | "client";
-  adminScreen: "dashboard" | "companies" | "companyDetail" | "createRequest" | "trackRequest" | "notifications";
+  adminScreen: "dashboard" | "companies" | "companyDetail" | "createRequest" | "trackRequest" | "notifications" | "documents" | "calendar" | "reports" | "settings";
   activeCompanyId: string | null;
   clientDocState: "initial" | "uploading" | "success";
   requestData?: RequestData;

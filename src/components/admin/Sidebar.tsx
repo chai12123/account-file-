@@ -8,7 +8,7 @@ const MENU_ITEMS = [
   { id: 'dashboard', label: 'แดชบอร์ด', icon: LayoutDashboard },
   { id: 'companies', label: 'บริษัทลูกค้า', icon: Building2 },
   { id: 'createRequest', label: 'คำขอเอกสาร', icon: Send },
-  { id: 'companyDetail', label: 'เอกสาร', icon: FileText },
+  { id: 'documents', label: 'เอกสาร', icon: FileText },
   { id: 'calendar', label: 'ปฏิทิน', icon: Calendar },
   { id: 'reports', label: 'รายงาน', icon: BarChart3 },
   { id: 'notifications', label: 'การแจ้งเตือน', icon: Bell, badge: 8 },

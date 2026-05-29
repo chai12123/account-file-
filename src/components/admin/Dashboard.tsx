@@ -119,17 +119,17 @@ export default function Dashboard({ companies, notifications, navToAdmin }: Dash
           </div>
           <div className="space-y-5 overflow-y-auto pr-2">
             {notifications.slice(0, 5).map((notif, i) => {
-              let icon = FileText;
+              let Icon = FileText;
               let bg = "bg-blue-50 text-blue-500";
-              if (notif.type === 'overdue') { icon = AlertCircle; bg = "bg-red-50 text-red-500"; }
-              else if (notif.type === 'success') { icon = CheckCircle2; bg = "bg-emerald-50 text-emerald-500"; }
-              else if (notif.type === 'upload') { icon = CheckCircle2; bg = "bg-blue-50 text-blue-500"; }
-              else if (notif.type === 'reject') { icon = AlertCircle; bg = "bg-red-50 text-red-500"; }
+              if (notif.type === 'overdue') { Icon = AlertCircle; bg = "bg-red-50 text-red-500"; }
+              else if (notif.type === 'success') { Icon = CheckCircle2; bg = "bg-emerald-50 text-emerald-500"; }
+              else if (notif.type === 'upload') { Icon = CheckCircle2; bg = "bg-blue-50 text-blue-500"; }
+              else if (notif.type === 'reject') { Icon = AlertCircle; bg = "bg-red-50 text-red-500"; }
               
               return (
                 <div key={i} className="flex items-start gap-3">
                   <div className={`mt-0.5 w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${bg}`}>
-                    <icon className="w-4 h-4" />
+                    <Icon className="w-4 h-4" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-slate-800 leading-tight mb-0.5">{notif.message}</p>
